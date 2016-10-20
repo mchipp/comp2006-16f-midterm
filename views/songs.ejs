@@ -1,0 +1,22 @@
+<!--Created by Mark Chipp 200180985 <mark.chipp@live.ca, mark.chipp@mygeorgian.ca>
+    Created on 20-Oct-2016-->
+
+<% include partials/header.ejs %>
+    <h1><%= title %></h1>
+    <table class="table table-striped">
+    <tr>
+        <th>Title</th>
+        <th>Artist</th>
+        <th>Year</th>
+    </tr>
+    <% for (var i=0; i < songs.length; i++) { %>
+        <tr>
+        <td><%= songs[i].title %></td>
+        <td><%= songs[i].artist %></td>
+        <td><%= songs[i].year %></td>
+        </tr>
+    <% } %>
+    </table>
+  </body>
+</html>
+<% include partials/footer.ejs %>
