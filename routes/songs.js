@@ -16,7 +16,7 @@ router.get('/', function(req, res, next) {
             res.render('error');
         }
         else{
-            // no error? log the songs view!
+            // no error? load the songs view!
             res.render('songs', {
                 title: 'Songs',
                 songs: songs
